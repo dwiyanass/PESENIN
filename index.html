@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/typed.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,17 @@
     <div class="container">
         <div class="content-welcomePage">
             <div class="upper">
-                <p><b>>_</b>Welcome!</p>
+                <p><b>></b> <span id="typed"></span> </p>
+                <script>
+                    var typed = new Typed('#typed', {
+                    strings: ['Welcome!', 'Nice to meet you!', 'Have a good day!'],
+                    typeSpeed: 50,
+                    backSpeed: 0,
+                    cursorChar: '_',
+                    smartBackspace: false,
+                    loop: true
+                });
+                </script>
             </div>
             <div class="downner">
                 <p>This is a special website to measure 1000 IndiHome!</p>
